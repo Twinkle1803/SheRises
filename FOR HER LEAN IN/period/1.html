@@ -2,7 +2,9 @@
 <html>
     <head>
         <title>PeriodTracker</title>
-        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="./style.css"/>
+        <link rel="stylesheet" href="../src/Style.css"/>
+        <link rel="stylesheet" href="../src/mobile-style.css"/>
     </head>
     <body>
         
@@ -16,11 +18,13 @@
                 
                 <label for="cycleLength">Cycle length:</label>
                 <input type="number" id="cycleLength" name="cycleLength" min="21" max="35">
-                <button type="button" onclick="calculateNextPeriod()">Calculate</button>
+                <button type="button" onclick="calculateAndSuggest() ">Calculate</button>
 
                 <!--<button onclick="calculateNextPeriod()">Calculate</button>-->
                 
                 <p id="nextPeriodDisplay"></p>
+                <p id="phaseDisplay"></p>
+                <p id="tipsDisplay"></p>
             </form>
         </div>       
         <script src="./script.js"></script>

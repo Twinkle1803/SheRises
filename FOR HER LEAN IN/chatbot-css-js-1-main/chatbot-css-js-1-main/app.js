@@ -39,7 +39,7 @@ const renderMessageEle = (txt, type) => {
 
 const getChatbotResponse = (userInput) => {
   return responseObj[userInput] == undefined
-    ? "choose among following: 1 emergency numbers"
+    ? "choose among following: 1 emergency numbers 2 diabetes 3 stomach pain 4 pcos:"
     : responseObj[userInput];
 };
 
